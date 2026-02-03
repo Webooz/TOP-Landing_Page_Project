@@ -2,42 +2,99 @@ body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
-    display: flex;
     margin: 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+
 }
 
-/* Activation Flexbox Horizontal */
+/* Activation Flexbox Horizontal 
 .header,
 .footer,
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10vw;
-    margin: 0px;
-}
+   
+}*/
 
 /* Activation Flexbox Vertical */
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex: 1;
+    justify-content: space-between;
 }
 
 /*  Activation Stretching Vertical des sections */
 .section {
-    flex: 1;
+    /* display: flex; */
+    padding: 5rem 1rem;
+}
+
+.querry {
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+/* Taille max de contenu */
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 890px;
+    gap: 4rem;
+}
+
+/* Exception alignement vertical pour le header en baseline */
+.header .wrap {
+    align-items: baseline;
 }
 
 /* Flexbox Centre */
 .footer {
     justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.querry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapB {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.quote {
+    font-style: italic;
 }
 
 /* Couleur de fond */
@@ -45,24 +102,59 @@ body {
 .footer,
 .hero {
     color: #e5e7eb;
-    background-color:#1F2937 ;
+    background-color: #1F2937;
 }
 
 /* Padding */
 .header,
-.hero {
-    padding: 1rem 1.5rem;
+.footer {
+    padding: 1rem 1rem;
 }
+
 .logo {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: 700;
 }
-ul {
+
+.wrapT {
+    flex-direction: column;
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 890px;
+    gap: 4rem;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: end;
+}
+
+.toutenbas .wrap {
+    padding: 2rem 4rem;
+    background-color: #3882F6;
+    color: #e5e7eb;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+ul,
+h1,
+h4,
+h3 {
     display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    gap: 1rem;;
+    gap: 1rem;
 }
 
 a {
@@ -71,13 +163,37 @@ a {
     font-size: 18px;
     text-wrap-mode: nowrap;
 }
+
 .hero p {
     width: 350px;
+    font-size: 18px;
 }
-img {
-    height: 300px;
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.section h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero img {
+    height: 200px;
     width: auto;
 }
+
+.querry img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #3882F6;
+}
+
 button.signup {
     background-color: #3882F6;
     color: #fcfdfe;
@@ -86,6 +202,9 @@ button.signup {
     border: 0;
     border-color: #3882F6;
     border-radius: 6px;
-    
+}
+
+.wrap .signup {
+    border: 2px solid;
 
 }
